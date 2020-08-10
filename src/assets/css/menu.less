@@ -1,0 +1,101 @@
+@import './base.less';
+
+.menu {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+
+    // 导航栏
+    .van-nav-bar {
+        background-color: black;
+
+        .van-ellipsis {
+            color: #dddddd;
+        }
+
+        .login-is {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            span {
+                color: red;
+                font-size: 8px;
+            }
+        }
+    }
+
+    .main {
+        padding-top: 46px;
+        height: 100%;
+
+        .my-swipe {
+            height: 200px;
+
+            .van-swipe-item {
+                display: flex;
+                align-items: center;
+            }
+
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+
+        .menu-content {
+            height: calc(100% - 200px - 49px);
+            display: flex;
+
+
+            // 侧边导航
+            .nav-left {
+                position: relative;
+                width: 100px;
+                height: 100%;
+                background-color: rgb(245, 245, 245);
+                overflow-y: auto;
+
+                li {
+                    width: 100%;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    font-size: 14px;
+
+                    &.active {
+                        color: rgb(0, 204, 255);
+                        background-color: white;
+                    }
+                }
+
+                .line {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 4px;
+                    height: 60px;
+                    background-color: black;
+                    transition: 0.3s;
+                }
+            }
+
+            // 导航对应的商品
+            .content-right {
+                flex: 1;
+                height: 100%;
+                overflow-y: auto;
+
+                .goods-item {
+                    width: 100%;
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,70 @@
+@import './base.less';
+
+.account {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+
+    // 导航栏
+    .van-nav-bar {
+        background-color: black;
+
+        .van-nav-bar__left>.van-nav-bar__arrow::before,
+        .van-nav-bar__left>.van-nav-bar__text,
+        .van-nav-bar__right>.van-nav-bar__text {
+            color: red;
+        }
+
+        .van-ellipsis {
+            color: #dddddd;
+        }
+    }
+
+
+    .content {
+        height: calc(100% - 50px);
+
+        .van-cell-group {
+            height: 100%;
+
+
+            .cell-head {
+
+                .van-cell__title,
+                .van-cell__value {
+                    height: 50px;
+                    line-height: 50px;
+                }
+            }
+
+            .head-img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50px;
+            }
+
+
+            .head-name {
+                input {
+                    width: 150px;
+                    border: none;
+                    outline: none;
+                    padding-right: 10px;
+                    text-align: right;
+                }
+            }
+
+            .text {
+                textarea {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    resize: none;
+                }
+
+            }
+        }
+    }
+}

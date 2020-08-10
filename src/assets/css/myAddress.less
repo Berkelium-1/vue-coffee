@@ -1,0 +1,32 @@
+@import './base.less';
+
+
+.my-address {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+
+    // 导航栏
+    .van-nav-bar {
+        background-color: black;
+
+        .van-nav-bar__left>.van-nav-bar__arrow::before,
+        .van-nav-bar__left>.van-nav-bar__text,
+        .van-nav-bar__right>.van-nav-bar__text {
+            color: red;
+        }
+
+        .van-ellipsis {
+            color: #dddddd;
+        }
+    }
+
+
+
+    // 隐藏单选框和底部按钮
+    .van-radio__icon,
+    .van-address-list__bottom {
+        display: none;
+    }
+
+}
