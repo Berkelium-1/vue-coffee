@@ -1,27 +1,5 @@
 # coffeshop
-
 ```txt
-邮箱正则：/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
-```
-
-```txt
-配置vant
-cnpm i vant -S
-
-自动按需引入组件 (推荐)
-cnpm i babel-plugin-import -D
-
-babel.config.js 中配置
-module.exports = {
-  plugins: [
-    ['import', {
-      libraryName: 'vant',
-      libraryDirectory: 'es',
-      style: true
-    }, 'vant']
-  ]
-};
-
 Rem 适配
 cnpm i postcss-pxtorem lib-flexible -D
 
@@ -37,10 +15,6 @@ module.exports = {
     }
   }
 }
-
-在main.js导入lib-flexible
-import 'lib-flexible';
-
 ```
 
 ```txt
